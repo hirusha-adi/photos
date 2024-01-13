@@ -192,9 +192,9 @@ for i in range(max_no, 0, -1):
     block_code = f"""
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="https://github.com/hirusha-adi/photos/raw/master/photos/{i}.jpg" class="img-fluid" alt="">
+              <img src="./media/large/{i}.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="https://github.com/hirusha-adi/photos/raw/master/photos/{i}.jpg" title="Image {i}" class="glightbox preview-link"><i
+                <a href="./media/large/{i}.jpg" title="Image {i}" class="glightbox preview-link"><i
                     class="bi bi-arrows-angle-expand"></i></a>
               </div>
             </div>
