@@ -182,7 +182,7 @@ block_end = r"""</div>
 </html>
 """
 
-images = os.listdir(os.path.join(os.getcwd(), "photos"))
+images = os.listdir(os.path.join(os.getcwd(), 'media', 'large'))
 
 max_no = max([int(image.split(".")[0]) for image in images])
 
