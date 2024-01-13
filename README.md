@@ -1,5 +1,14 @@
 # Photos Website | Hirusha Adikari
 
+<p align="center">
+<br>
+<a href="https://hirusha.xyz">🖥 Online Preview</a>
+</p>
+
+<pre align="center">
+Website with display my photos. 
+</pre>
+
 ## 📂 Folder Structure
 
 ```bash
@@ -23,6 +32,14 @@
     ...
 ```
 
+# Guide for Windows
+
+## 🔌 Prerequisites
+
+- Download and install these:
+  - [Python](https://www.python.org/downloads/)
+  - [Nodejs (with npm)](https://nodejs.org/en/download)
+
 ## 📥 Setting up [`thumbsup`](https://thumbsup.github.io/docs/)
 
 1. Install `thumbsup` witn npm, globally.
@@ -44,18 +61,131 @@ npm install -g thumbsup
   - You may compress it with [File Converter](https://github.com/Tichau/FileConverter)
   - All images should be in `.jpg`
 
-## 🛠 Update the images
+## 🛠 Updating the website
 
 - Run the command below
 
-```bash
-thumbsup --input ./original_photos --output ./gallery
-```
+  ```bash
+  thumbsup --input ./original_photos --output ./gallery
+  ```
 
-![](https://github.com/thumbsup/thumbsup/raw/master/docs/demo.gif)
+  ![](https://github.com/thumbsup/thumbsup/raw/master/docs/demo.gif)
 
-- The new compressed images and the other thumbsup files will be generated inside `./gallery`
+- The newly compressed images and the other thumbsup files will be generated inside `./gallery`
 
 - Rename `./gallery/index.html` to `./gallery/quick.html`
 
 - Move and replace everything from `./gallery` to `./`
+
+- Run the `gallery.py` file, to update the gallery of my main site
+
+  ```
+  python gallery.py
+  ```
+
+- Test with a local server, for example using VSCode Live Server.
+
+- Commit and push changes to your GitHub repository, and wait for GitHub Pages to update the live site.
+
+# Guide for Ubuntu
+
+## 🔌 Prerequisites
+
+- Open a terminal and run the following commands to install the necessary tools:
+  ```bash
+  sudo apt-get update
+  sudo apt-get install python3 nodejs npm -y
+  ```
+
+## 📥 Setting up [`thumbsup`](https://thumbsup.github.io/docs/)
+
+1. Install `thumbsup` with npm, globally.
+
+   ```bash
+   sudo npm install -g thumbsup
+   ```
+
+2. Install GraphicsMagick:
+
+   ```bash
+   sudo apt-get install graphicsmagick -y
+   ```
+
+3. Install exiftool:
+
+   ```bash
+   sudo apt install exiftool -y
+   ```
+
+## 📚 Adding new images
+
+- Copy your high quality images into `./original_photos`
+
+  - You may compress them using tools like [File Converter (Windows Only)](https://github.com/Tichau/FileConverter) or any other tools.
+  - Ensure all images are in `.jpg` format.
+
+## 🛠 Updating the website
+
+- Run the following command:
+
+  ```bash
+  thumbsup --input ./original_photos --output ./gallery
+  ```
+
+  ![Thumbsup Demo](https://github.com/thumbsup/thumbsup/raw/master/docs/demo.gif)
+
+- The newly compressed images and other thumbsup files will be generated inside `./gallery`.
+
+- Rename `./gallery/index.html` to `./gallery/quick.html`:
+
+  ```bash
+  mv ./gallery/index.html ./gallery/quick.html
+  ```
+
+- Move and replace everything from `./gallery` to `./`:
+
+  ```bash
+  mv ./gallery/* ./
+  ```
+
+- Run the `./gallery.py` file to update the gallery on your main site:
+
+  ```bash
+  python3 gallery.py
+  ```
+
+- Test with a local server, for example using VSCode Live Server.
+
+- Commit and push changes to your GitHub repository, and wait for GitHub Pages to update the live site.
+
+## 🔧 Customizing the thumbsup size
+
+- Now, your thumbsup file should be `./quick.html`
+
+- Open it and check for the `<header> ... </header>` tag, you may replace it with this: (Custom Title/Header)
+
+```html
+<header>
+  <a href="quick.html">
+    <h1>Hirusha Adikari | Thumbsup Gallery</h1>
+  </a>
+  <br />
+  <a href="index.html"> Go back </a>
+</header>
+```
+
+- Then, scroll to the very end until you find `Optional footer` (commented out), you may add this below it: (Custom Footer)
+
+```html
+<center>
+  Copyright © 2021-2024 Hirusha Adikari
+  <br>
+  <a href="https://thumbsup.github.io/docs/" target="_blank" rel="noopener noreferrer">thumbsup</a>
+    gallery
+  </p>
+</center>
+```
+
+## License
+
+Licensed under the [MIT License](./LICENSE)
