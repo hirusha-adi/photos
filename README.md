@@ -66,7 +66,7 @@ npm install -g thumbsup
 - Run the command below
 
   ```bash
-  thumbsup --input ./original_photos --output ./gallery --theme cards
+  thumbsup --input ./original_photos --output ./gallery --theme cards --index quick.html --title "Hirusha Adikari | Photography" --footer "Copyright © 2021-2024 Hirusha Adikari" --albums-output-folder "albums" --albums-from %path
   ```
 
   ![](https://github.com/thumbsup/thumbsup/raw/master/docs/demo.gif)
@@ -157,34 +157,6 @@ npm install -g thumbsup
 - Test with a local server, for example using VSCode Live Server.
 
 - Commit and push changes to your GitHub repository, and wait for GitHub Pages to update the live site.
-
-## 🔧 Customizing the thumbsup size
-
-- Now, your thumbsup file should be `./quick.html`
-
-- Open it and check for the `<header> ... </header>` tag, you may replace it with this: (Custom Title/Header)
-
-```html
-<header>
-  <a href="quick.html">
-    <h1>Hirusha Adikari | Thumbsup Gallery</h1>
-  </a>
-  <br />
-  <a href="index.html"> Go back </a>
-</header>
-```
-
-- Then, scroll to the very end until you find `Optional footer` (commented out), you may add this below it: (Custom Footer)
-
-```html
-<center>
-  Copyright © 2021-2024 Hirusha Adikari
-  <br>
-  <a href="https://thumbsup.github.io/docs/" target="_blank" rel="noopener noreferrer">thumbsup</a>
-    gallery
-  </p>
-</center>
-```
 
 ## License
 
