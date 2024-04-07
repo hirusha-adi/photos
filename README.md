@@ -66,7 +66,7 @@ npm install -g thumbsup
 - Run the command below
 
   ```bash
-  thumbsup --input ./original_photos --output ./gallery
+  thumbsup --input ./original_photos --output ./gallery --theme cards
   ```
 
   ![](https://github.com/thumbsup/thumbsup/raw/master/docs/demo.gif)
