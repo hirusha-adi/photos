@@ -129,7 +129,7 @@ npm install -g thumbsup
 - Run the following command:
 
   ```bash
-  thumbsup --input ./original_photos --output ./gallery
+  thumbsup --input ./original_photos --output ./gallery --theme cards --index quick.html --title "Hirusha Adikari | Photography" --footer "Copyright © 2021-2024 Hirusha Adikari" --albums-output-folder "albums" --albums-from %path
   ```
 
   ![Thumbsup Demo](https://github.com/thumbsup/thumbsup/raw/master/docs/demo.gif)
