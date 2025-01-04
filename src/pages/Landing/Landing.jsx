@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Slider } from "./components/Slider";
+import { ArrowRight } from "react-bootstrap-icons"
 
 const Landing = () => {
   useEffect(() => {
@@ -7,14 +8,14 @@ const Landing = () => {
   }, []);
 
   return (
-    <div className="h-screen flex flex-col justify-center items-center bg-gray-100 text-center">
+    <div className="h-screen flex flex-col items-center  text-center">
       {/* Title */}
-      <h1 className="text-4xl font-bold text-gray-800 mb-2">
+      <h1 className="text-4xl font-bold mb-2">
         I take photos, sometimes.
       </h1>
 
       {/* Description */}
-      <p className="text-gray-600 mb-6 w-[40%]">
+      <p className="mb-6 w-[40%]">
         As a hobbyist photographer, I aim to capture the beauty of the world through my lens and bring a unique perspective to every image I create.
       </p>
 
@@ -22,17 +23,17 @@ const Landing = () => {
         className="mb-6 relative overflow-hidden w-[70%]"
         style={{
           maskImage:
-            "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%)",
+            "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%)",
           WebkitMaskImage:
-            "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%)",
+            "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%)",
         }}
       >
         <Slider />
       </div>
 
       {/* Button */}
-      <button className="btn btn-primary px-6 py-2">
-        View More
+      <button className="btn btn-outline px-6 py-2">
+        View All <ArrowRight className="text-lg" />
       </button>
 
       {/* Footer */}
