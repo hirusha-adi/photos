@@ -5,15 +5,13 @@ const Gallery = () => {
     <>
       <div className="">
         {/* Grid Layout */}
-        <div className="grid grid-cols-4">
+        <div className="grid lg:grid-cols-4 grid-cols-1 gap-4">
           {imageUrls.map((url, index) => (
-            <div key={index}>
-              <img
-                src={url}
-                alt={`Placeholder ${index + 1}`}
-                className="h-[300px]"
-              />
-            </div>
+            <img key={index}
+              src={url}
+              alt={`Placeholder ${index + 1}`}
+              className="h-[300px]"
+            />
           ))}
         </div>
       </div>

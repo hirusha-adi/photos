@@ -9,6 +9,7 @@ const All = () => {
 
 	return (
 		<>
+
 			<div className="flex flex-col lg:flex-row mt-6 mb-20 lg:mb-7">
 				{/* Left (Desktop) / Top (Mobile) */}
 				<div className="px-2 lg:mx-2 mb-2 w-full lg:w-auto">
@@ -26,9 +27,11 @@ const All = () => {
 				{/* Right (Desktop) / Bottom (Mobile) */}
 				<div className="bg-base-100 p-4 rounded-box flex-1 px-5 h-[87vh] max-h-[87vh] min-h-[87vh] relative">
 					<div className="">
-						<div className="flex justify-center items-center h-[84vh] overflow-y-scroll">
-							<Gallery />
-						</div>
+						<>
+							<div className="flex justify-center items-center h-screen overflow-y-scroll">
+								<Gallery />
+							</div>
+						</>
 					</div>
 				</div>
 			</div >
