@@ -22,7 +22,7 @@ const Slider = () => {
     slides: { perView: "auto", spacing: 10 }, // Auto width and spacing
   });
 
-  const placeholderImages = Array.from({ length: 10 }, (_, i) => ({
+  const placeholderImages = Array.from({ length: 5 }, (_, i) => ({
     src: `https://placehold.co/400x500?text=Slide+${i + 1}`,
     alt: `Placeholder ${i + 1}`,
   }));
