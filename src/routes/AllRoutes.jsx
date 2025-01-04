@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes, Navigate } from "react-router-dom"
 import { Home, PageNotFound } from "../pages"
 
 const AllRoutes = () => {
@@ -8,8 +8,12 @@ const AllRoutes = () => {
                 {/* Main (for General Public) */}
                 <Route path="/" element={<Home />} />
 
+                {/* ------------------------- */}
                 {/* Errors */}
-                <Route path="*" element={<PageNotFound />} />
+                {/* ------------------------- */}
+                <Route path="*" element={<Navigate to="/404" />} />
+                <Route path="/404" element={<PageNotFound />} />
+                {/* ------------------------- */}
             </Routes>
         </>
     );
