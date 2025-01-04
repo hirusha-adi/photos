@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Gallery } from "./components/Gallery";
+import { NavBar } from "./components/NavBar";
 
 const All = () => {
 
@@ -9,32 +10,33 @@ const All = () => {
 
 	return (
 		<>
-
-			<div className="flex flex-col lg:flex-row mt-6 mb-20 lg:mb-7">
-				{/* Left (Desktop) / Top (Mobile) */}
-				<div className="px-2 lg:mx-2 mb-2 w-full lg:w-auto">
-					<div className="bg-base-200 rounded-box w-full lg:w-64 overflow-y-auto overflow-x-hidden lg:h-[87vh] lg:max-h-[87vh] lg:min-h-[87vh] h-[35vh] max-h-[35vh] min-h-[35vh]">
-						<ul className="menu">
-							<>
-								<div className="flex justify-center items-center h-[75vh]">
-									<span className="loading loading-spinner text-error"></span>
-								</div>
-							</>
-						</ul>
-					</div>
+			<div className="drawer">
+				<input id="my-drawer" type="checkbox" className="drawer-toggle" />
+				<div className="drawer-content">
+					{/* Page content here */}
+					<NavBar />
+					<div className=""><Gallery /></div>
 				</div>
-
-				{/* Right (Desktop) / Bottom (Mobile) */}
-				<div className="bg-base-100 p-4 rounded-box flex-1 px-5 h-[87vh] max-h-[87vh] min-h-[87vh] relative">
-					<div className="">
-						<>
-							<div className="flex justify-center items-center h-screen overflow-y-scroll">
-								<Gallery />
-							</div>
-						</>
-					</div>
+				<div className="drawer-side">
+					<label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
+					<ul className="bg-base-200 text-base-content min-h-full w-80 p-4">
+						<div className="text-lg border-b pb-2 mb-2">Country</div>
+						<div className="form-control">
+							<label className="label cursor-pointer">
+								<span className="label-text">Sri Lanka</span>
+								<input type="checkbox" defaultChecked className="checkbox" />
+							</label>
+						</div>
+						<div className="form-control">
+							<label className="label cursor-pointer">
+								<span className="label-text">Singapore</span>
+								<input type="checkbox" defaultChecked className="checkbox" />
+							</label>
+						</div>
+					</ul>
 				</div>
-			</div >
+			</div>
+
 		</>
 	);
 };

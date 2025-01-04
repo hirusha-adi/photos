@@ -3,7 +3,7 @@ const Gallery = () => {
 
   return (
     <>
-      <div className="">
+      <div className="flex justify-center items-center lg:block">
         {/* Grid Layout */}
         <div className="grid lg:grid-cols-4 grid-cols-1 gap-4">
           {imageUrls.map((url, index) => (
