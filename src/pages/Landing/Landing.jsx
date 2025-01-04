@@ -8,14 +8,14 @@ const Landing = () => {
   }, []);
 
   return (
-    <div className="h-screen flex flex-col items-center  text-center">
+    <div className="h-screen flex flex-col items-center lg:justify-center text-center">
       {/* Title */}
-      <h1 className="text-4xl font-bold mb-2">
-        I take photos, sometimes.
+      <h1 className="text-4xl font-bold mb-2 mt-16 lg:mt-0">
+        i take photos, sometimes.
       </h1>
 
       {/* Description */}
-      <p className="mb-6 w-[40%]">
+      <p className="mb-6 lg:w-[60%] px-6 pt-8 md:pt-2">
         As a hobbyist photographer, I aim to capture the beauty of the world through my lens and bring a unique perspective to every image I create.
       </p>
 
@@ -23,9 +23,9 @@ const Landing = () => {
         className="mb-6 relative overflow-hidden w-[70%]"
         style={{
           maskImage:
-            "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%)",
+            "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%)",
           WebkitMaskImage:
-            "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%)",
+            "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%)",
         }}
       >
         <Slider />
