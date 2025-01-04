@@ -47,7 +47,15 @@ const Landing = () => {
         />
       </div> */}
 
-      <div className="">
+      <div
+        className="mb-6 relative overflow-hidden w-[80%]"
+        style={{
+          maskImage:
+            "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%)",
+          WebkitMaskImage:
+            "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%)",
+        }}
+      >
         <Slider />
       </div>
 
