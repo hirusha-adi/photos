@@ -15,7 +15,12 @@ const All = () => {
 				<div className="drawer-content">
 					{/* Page content here */}
 					<NavBar />
-					<div className=""><Gallery /></div>
+					<div className="mb-16 lg:mb-32">
+						<Gallery />
+					</div>
+					<div className="block lg:hidden text-center mb-10">
+						&copy; Hirusha Adikari, 2020 - {new Date().getFullYear()}
+					</div>
 				</div>
 				<div className="drawer-side">
 					<label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>

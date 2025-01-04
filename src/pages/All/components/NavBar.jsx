@@ -1,10 +1,9 @@
 import { List } from "react-bootstrap-icons";
 
-
 const NavBar = () => {
   return (
     <>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 sticky top-0 z-1">
         <div className="flex-none">
           <label className="btn btn-square btn-ghost" htmlFor="my-drawer">
             <List className="text-3xl" />
@@ -18,7 +17,7 @@ const NavBar = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export { NavBar }
+export { NavBar };
