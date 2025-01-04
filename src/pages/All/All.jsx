@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Gallery } from "./components/Gallery";
 
 const All = () => {
 
@@ -26,12 +27,11 @@ const All = () => {
 				</div>
 				{/* Body */}
 				<div className="bg-base-100 rounded-box flex-1 h-screen max-h-screen min-h-screen relative">
-					<div className="">
-						<div className="flex justify-between items-center my-5 mx-10">
-							<div className="text-4xl font-bold">All Photos</div>
-							<div className="text-1xl font-bold">&copy; Hirusha Adikari</div>
-						</div>
+					<div className="flex justify-between items-center my-5 mx-10">
+						<div className="text-4xl font-bold">All Photos</div>
+						<div className="text-1xl font-bold">&copy; Hirusha Adikari</div>
 					</div>
+					<Gallery />
 				</div>
 			</div>
 		</>
