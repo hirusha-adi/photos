@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Slider } from "./components/Slider";
 import { ArrowRight } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   useEffect(() => {
@@ -33,9 +34,9 @@ const Landing = () => {
       </div>
 
       {/* Button */}
-      <button className="btn btn-outline px-6 py-2">
+      <Link to={"/all"} className="btn btn-outline px-6 py-2">
         View All <ArrowRight className="text-lg" />
-      </button>
+      </Link>
 
       {/* Footer */}
       <footer className="absolute bottom-4 text-sm text-gray-500">

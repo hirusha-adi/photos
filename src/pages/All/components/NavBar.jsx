@@ -1,4 +1,5 @@
 import { List } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -10,7 +11,9 @@ const NavBar = () => {
           </label>
         </div>
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl">All Photos</a>
+          <Link to={"/"} className="btn btn-ghost text-xl">
+            All Photos
+          </Link>
         </div>
         <div className="flex-none">
           <div className="hidden lg:block">&copy; Hirusha Adikari</div>
