@@ -21,15 +21,7 @@ const Landing = () => {
         through my lens and bring a unique perspective to every image I create.
       </p>
 
-      <div
-        className="mb-6 relative overflow-hidden w-[95%] md:w-[70%]"
-        style={{
-          maskImage:
-            "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%)",
-          WebkitMaskImage:
-            "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%)",
-        }}
-      >
+      <div className="mb-6 w-[95%] md:w-[70%]">
         <Slider />
       </div>
 

@@ -1,44 +1,37 @@
-import { useKeenSlider } from "keen-slider/react";
-import "keen-slider/keen-slider.min.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/autoplay";
+import { Autoplay } from "swiper/modules";
 
 const Slider = () => {
-  const animation = { duration: 5000, easing: (t) => t };
-  const [sliderRef] = useKeenSlider({
-    loop: true,
-    renderMode: "performance",
-    drag: false,
-    created(slider) {
-      slider.moveToIdx(5, true, animation);
-    },
-    updated(slider) {
-      slider.moveToIdx(slider.track.details.abs + 5, true, animation);
-    },
-    animationEnded(slider) {
-      slider.moveToIdx(slider.track.details.abs + 5, true, animation);
-    },
-    slides: { perView: "auto", spacing: 5 },
-  });
-
   // List of 10 placeholder image URLs with size 400x500
-  const placeholderImages = Array.from({ length: 5 }, (_, i) => ({
-    src: `https://placehold.co/400x500?text=Slide+${i + 1}`,
-    alt: `Placeholder ${i + 1}`,
-  }));
+  const images = Array(10).fill("https://placehold.co/300x300");
 
   return (
-    <div ref={sliderRef} className="keen-slider h-[40vh] relative">
-      {placeholderImages.map((image, index) => (
-        <div
-          className="keen-slider__slide flex items-center justify-center h-[100%] flex-shrink-0 md:flex-shrink"
-          key={index}
-        >
-          <img
-            src={image.src}
-            alt={image.alt}
-            className="rounded-lg h-full w-auto object-contain"
-          />
-        </div>
-      ))}
+    <div className="">
+      <Swiper
+        modules={[Autoplay]}
+        spaceBetween={10}
+        autoplay={{ delay: 1500, disableOnInteraction: false }}
+        breakpoints={{
+          // mobile
+          640: { slidesPerView: 1 },
+          // desktop
+          1024: { slidesPerView: 3 },
+        }}
+      >
+        {images.map((imageUrl, index) => (
+          <SwiperSlide key={index}>
+            <div className="w-full aspect-square">
+              <img
+                src={imageUrl}
+                alt={`Slide ${index + 1}`}
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 };
