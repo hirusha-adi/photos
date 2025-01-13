@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
+import { PaginateGallery } from "./PaginateGallery";
 
 const Gallery = ({ currentPhotos }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -20,6 +21,12 @@ const Gallery = ({ currentPhotos }) => {
 
   return (
     <>
+      <PaginateGallery
+        totalPages={totalPages}
+        currentPage={currentPage}
+        handlePageChange={handlePageChange}
+      />
+
       <div className="flex justify-center items-center mt-5">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
           {currentPhotosToShow.map((photo, index) => (
@@ -34,19 +41,11 @@ const Gallery = ({ currentPhotos }) => {
         </div>
       </div>
 
-      <div className="flex justify-center mt-5">
-        <div className="btn-group">
-          {[...Array(totalPages)].map((_, index) => (
-            <button
-              key={index}
-              className={`btn ${currentPage === index + 1 ? "btn-active" : ""}`}
-              onClick={() => handlePageChange(index + 1)}
-            >
-              {index + 1}
-            </button>
-          ))}
-        </div>
-      </div>
+      <PaginateGallery
+        totalPages={totalPages}
+        currentPage={currentPage}
+        handlePageChange={handlePageChange}
+      />
     </>
   );
 };
