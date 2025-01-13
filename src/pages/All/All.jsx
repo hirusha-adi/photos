@@ -1,8 +1,11 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Gallery } from "./components/Gallery";
 import { NavBar } from "./components/NavBar";
+import PhotosJson from "../../assets/photos.json";
 
 const All = () => {
+  const [currentPhotos, setCurrentPhotos] = useState(PhotosJson.photos);
+
   useEffect(() => {
     document.title = `All Photos`;
   });
@@ -14,7 +17,7 @@ const All = () => {
         <div className="drawer-content">
           <NavBar />
           <div className="mb-16 lg:mb-32">
-            <Gallery />
+            <Gallery currentPhotos={currentPhotos} />
           </div>
           <div className="block lg:hidden text-center mb-10">
             &copy; Hirusha Adikari, 2020 - {new Date().getFullYear()}
