@@ -12,7 +12,6 @@ const All = () => {
       <div className="drawer">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
-          {/* Page content here */}
           <NavBar />
           <div className="mb-16 lg:mb-32">
             <Gallery />

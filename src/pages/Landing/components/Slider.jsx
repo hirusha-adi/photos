@@ -4,7 +4,6 @@ import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 
 const Slider = () => {
-  // List of 10 placeholder image URLs with size 400x500
   const images = Array(10).fill("https://placehold.co/300x300");
 
   return (
