@@ -16,7 +16,9 @@ const NavBar = () => {
           </Link>
         </div>
         <div className="flex-none">
-          <div className="hidden lg:block">&copy; Hirusha Adikari</div>
+          <div className="hidden lg:block">
+            &copy; Hirusha Adikari, 2020-2025
+          </div>
         </div>
       </div>
     </>
