@@ -14,9 +14,11 @@ const Slider = () => {
         spaceBetween={10}
         autoplay={{ delay: 1500, disableOnInteraction: false }}
         breakpoints={{
-          // mobile
+          // sm
           640: { slidesPerView: 1 },
-          // desktop
+          // TODO: Consider this. md
+          // 768: { slidesPerView: 2 },
+          // lg
           1024: { slidesPerView: 3 },
         }}
       >
