@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const PaginateGallery = ({ totalPages, currentPage, handlePageChange }) => {
   return (
     <div className="flex justify-center mt-5">
-      <div className="overflow-x-scroll">
+      <div className="overflow-x-scroll max-w-[80%] md:max-w-[85%]">
         <div className="btn-group flex flex-row">
           {[...Array(totalPages)].map((_, index) => (
             <button
