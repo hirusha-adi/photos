@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Slider } from "./components/Slider";
-import { ArrowRight } from "react-bootstrap-icons"
+import { ArrowRight } from "react-bootstrap-icons";
 
 const Landing = () => {
   useEffect(() => {
@@ -16,7 +16,8 @@ const Landing = () => {
 
       {/* Description */}
       <p className="mb-6 lg:w-[60%] px-6 pt-8 md:pt-2">
-        As a hobbyist photographer, I aim to capture the beauty of the world through my lens and bring a unique perspective to every image I create.
+        As a hobbyist photographer, I aim to capture the beauty of the world
+        through my lens and bring a unique perspective to every image I create.
       </p>
 
       <div
@@ -38,7 +39,8 @@ const Landing = () => {
 
       {/* Footer */}
       <footer className="absolute bottom-4 text-sm text-gray-500">
-        &copy; <a href="https://hirusha.xyz">Hirusha Adikari</a>, 2020 - {new Date().getFullYear()}
+        &copy; <a href="https://hirusha.xyz">Hirusha Adikari</a>, 2020 -{" "}
+        {new Date().getFullYear()}
       </footer>
     </div>
   );

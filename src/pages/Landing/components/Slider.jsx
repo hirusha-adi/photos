@@ -1,7 +1,5 @@
-import React from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-
 
 const Slider = () => {
   const animation = { duration: 5000, easing: (t) => t };
@@ -28,10 +26,7 @@ const Slider = () => {
   }));
 
   return (
-    <div
-      ref={sliderRef}
-      className="keen-slider h-[40vh] relative"
-    >
+    <div ref={sliderRef} className="keen-slider h-[40vh] relative">
       {placeholderImages.map((image, index) => (
         <div
           className="keen-slider__slide flex items-center justify-center h-[100%] flex-shrink-0 md:flex-shrink"
@@ -47,7 +42,5 @@ const Slider = () => {
     </div>
   );
 };
-
-
 
 export { Slider };

@@ -7,7 +7,8 @@ const Gallery = () => {
         {/* Grid Layout */}
         <div className="grid lg:grid-cols-4 grid-cols-1 gap-4">
           {imageUrls.map((url, index) => (
-            <img key={index}
+            <img
+              key={index}
               src={url}
               alt={`Placeholder ${index + 1}`}
               className="h-[300px]"
@@ -16,7 +17,7 @@ const Gallery = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export { Gallery }
+export { Gallery };
