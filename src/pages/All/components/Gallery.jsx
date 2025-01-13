@@ -6,12 +6,13 @@ const Gallery = ({ currentPhotos }) => {
       <div className="flex justify-center items-center mt-5">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
           {currentPhotos.map((photo, index) => (
-            <img
-              key={index}
-              src={`/images/${photo.filename}`}
-              alt={photo.name}
-              className="h-[300px]"
-            />
+            <div key={index} className="w-full aspect-square overflow-hidden">
+              <img
+                src={`/images/${photo.filename}`}
+                alt={photo.name}
+                className="w-full h-full object-cover rounded-xl"
+              />
+            </div>
           ))}
         </div>
       </div>
