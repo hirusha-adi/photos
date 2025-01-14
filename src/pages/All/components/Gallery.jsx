@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import { PaginateGallery } from "./PaginateGallery";
+import { ZoomableImage } from "./ZoomableImage";
 
 const Gallery = ({ currentPhotos }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -30,12 +31,8 @@ const Gallery = ({ currentPhotos }) => {
       <div className="flex justify-center items-center mt-5">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
           {currentPhotosToShow.map((photo, index) => (
-            <div key={index} className="w-full aspect-square overflow-hidden">
-              <img
-                src={`/images/${photo.filename}`}
-                alt={photo.name}
-                className="w-full h-full object-cover rounded-xl"
-              />
+            <div key={index}>
+              <ZoomableImage photo={photo} />
             </div>
           ))}
         </div>

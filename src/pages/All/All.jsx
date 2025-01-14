@@ -10,6 +10,11 @@ const All = () => {
     locations: [],
     countries: [],
   });
+  const [selectedItems, setSelectedItems] = useState({
+    tags: [],
+    locations: [],
+    countries: [],
+  });
 
   useEffect(() => {
     document.title = `All Photos`;
@@ -21,9 +26,47 @@ const All = () => {
       locations: PhotosJson.sidebar_data.locations,
       countries: PhotosJson.sidebar_data.countries,
     });
+    setSelectedItems({
+      tags: PhotosJson.sidebar_data.tags,
+      locations: PhotosJson.sidebar_data.locations,
+      countries: PhotosJson.sidebar_data.countries,
+    });
   }, []);
 
-  console.log(categories.tags);
+  useEffect(() => {
+    const filteredPhotos = PhotosJson.photos.filter((photo) => {
+      const matchesTags =
+        selectedItems.tags.length === 0 ||
+        selectedItems.tags.some((tag) => photo.tags.includes(tag));
+
+      const matchesLocations =
+        selectedItems.locations.length === 0 ||
+        selectedItems.locations.some((location) =>
+          photo.locations.includes(location)
+        );
+
+      const matchesCountry =
+        selectedItems.countries.length === 0 ||
+        selectedItems.countries.includes(photo.country);
+
+      return matchesTags && matchesLocations && matchesCountry;
+    });
+
+    setCurrentPhotos(filteredPhotos);
+  }, [selectedItems]);
+
+  const handleCheckboxChange = (category, value) => {
+    setSelectedItems((prevState) => {
+      const updatedCategory = prevState[category].includes(value)
+        ? prevState[category].filter((item) => item !== value) // Remove unchecked value
+        : [...prevState[category], value]; // Add checked value
+
+      return {
+        ...prevState,
+        [category]: updatedCategory,
+      };
+    });
+  };
 
   return (
     <>
@@ -32,7 +75,11 @@ const All = () => {
         <div className="drawer-content">
           <NavBar />
           <div className="mb-16 lg:mb-32">
-            <Gallery currentPhotos={currentPhotos} />
+            {currentPhotos ? (
+              <Gallery currentPhotos={currentPhotos} />
+            ) : (
+              "No photos to display."
+            )}
           </div>
           <div className="block lg:hidden text-center mb-10">
             &copy; Hirusha Adikari, 2020 - {new Date().getFullYear()}
@@ -51,7 +98,12 @@ const All = () => {
               <div className="form-control" key={index}>
                 <label className="label cursor-pointer">
                   <span className="label-text">{country}</span>
-                  <input type="checkbox" defaultChecked className="checkbox" />
+                  <input
+                    type="checkbox"
+                    checked={selectedItems.countries.includes(country)}
+                    onChange={() => handleCheckboxChange("countries", country)}
+                    className="checkbox"
+                  />
                 </label>
               </div>
             ))}
@@ -62,7 +114,12 @@ const All = () => {
               <div className="form-control" key={index}>
                 <label className="label cursor-pointer">
                   <span className="label-text">{tag}</span>
-                  <input type="checkbox" defaultChecked className="checkbox" />
+                  <input
+                    type="checkbox"
+                    checked={selectedItems.tags.includes(tag)}
+                    onChange={() => handleCheckboxChange("tags", tag)}
+                    className="checkbox"
+                  />
                 </label>
               </div>
             ))}
@@ -73,7 +130,12 @@ const All = () => {
               <div className="form-control" key={index}>
                 <label className="label cursor-pointer">
                   <span className="label-text">{location}</span>
-                  <input type="checkbox" defaultChecked className="checkbox" />
+                  <input
+                    type="checkbox"
+                    checked={selectedItems.locations.includes(location)}
+                    onChange={() => handleCheckboxChange("locations", location)}
+                    className="checkbox"
+                  />
                 </label>
               </div>
             ))}
