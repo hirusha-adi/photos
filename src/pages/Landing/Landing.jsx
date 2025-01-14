@@ -17,8 +17,7 @@ const Landing = () => {
 
       {/* Description */}
       <p className="mb-6 lg:w-[60%] px-6 pt-8 md:pt-2">
-        As a hobbyist photographer, I aim to capture the beauty of the world
-        through my lens and bring a unique perspective to every image I create.
+        These are some of my of photos.
       </p>
 
       <div className="mb-6 w-[95%] md:w-[70%]">

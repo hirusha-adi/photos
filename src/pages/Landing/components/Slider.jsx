@@ -2,10 +2,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
+import PhotosJson from "../../../assets/home.json";
 
 const Slider = () => {
-  const images = Array(10).fill("https://placehold.co/300x300");
-
   return (
     <div className="">
       <Swiper
@@ -21,11 +20,11 @@ const Slider = () => {
           1024: { slidesPerView: 3 },
         }}
       >
-        {images.map((imageUrl, index) => (
+        {PhotosJson.photos.map((imageUrl, index) => (
           <SwiperSlide key={index}>
             <div className="w-full aspect-square">
               <img
-                src={imageUrl}
+                src={`/images/${imageUrl}`}
                 alt={`Slide ${index + 1}`}
                 className="w-full h-full object-cover rounded-lg"
               />
