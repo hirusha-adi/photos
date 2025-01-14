@@ -5,10 +5,25 @@ import PhotosJson from "../../assets/photos.json";
 
 const All = () => {
   const [currentPhotos, setCurrentPhotos] = useState(PhotosJson.photos);
+  const [categories, setCategories] = useState({
+    tags: [],
+    locations: [],
+    countries: [],
+  });
 
   useEffect(() => {
     document.title = `All Photos`;
   });
+
+  useEffect(() => {
+    setCategories({
+      tags: PhotosJson.sidebar_data.tags,
+      locations: PhotosJson.sidebar_data.locations,
+      countries: PhotosJson.sidebar_data.countries,
+    });
+  }, []);
+
+  console.log(categories.tags);
 
   return (
     <>
@@ -30,19 +45,38 @@ const All = () => {
             className="drawer-overlay"
           ></label>
           <ul className="bg-base-200 text-base-content min-h-full w-80 p-4">
-            <div className="text-lg border-b pb-2 mb-2">Country</div>
-            <div className="form-control">
-              <label className="label cursor-pointer">
-                <span className="label-text">Sri Lanka</span>
-                <input type="checkbox" defaultChecked className="checkbox" />
-              </label>
-            </div>
-            <div className="form-control">
-              <label className="label cursor-pointer">
-                <span className="label-text">Singapore</span>
-                <input type="checkbox" defaultChecked className="checkbox" />
-              </label>
-            </div>
+            {/* Countries */}
+            <div className="text-lg border-b pb-2 mb-2">Countries</div>
+            {categories.countries.map((country, index) => (
+              <div className="form-control" key={index}>
+                <label className="label cursor-pointer">
+                  <span className="label-text">{country}</span>
+                  <input type="checkbox" defaultChecked className="checkbox" />
+                </label>
+              </div>
+            ))}
+
+            {/* Tags */}
+            <div className="text-lg border-b pb-2 mb-2">Tags</div>
+            {categories.tags.map((tag, index) => (
+              <div className="form-control" key={index}>
+                <label className="label cursor-pointer">
+                  <span className="label-text">{tag}</span>
+                  <input type="checkbox" defaultChecked className="checkbox" />
+                </label>
+              </div>
+            ))}
+
+            {/* Locations */}
+            <div className="text-lg border-b pb-2 mb-2">Locations</div>
+            {categories.locations.map((location, index) => (
+              <div className="form-control" key={index}>
+                <label className="label cursor-pointer">
+                  <span className="label-text">{location}</span>
+                  <input type="checkbox" defaultChecked className="checkbox" />
+                </label>
+              </div>
+            ))}
           </ul>
         </div>
       </div>
