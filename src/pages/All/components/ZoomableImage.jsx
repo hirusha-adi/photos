@@ -14,7 +14,11 @@ const ZoomableImage = ({ photo }) => {
     <ControlledZoom isZoomed={isZoomed} onZoomChange={handleZoomChange}>
       <div className="w-full aspect-square overflow-hidden">
         <img
-          src={`/images/${photo.filename}`}
+          src={
+            isZoomed
+              ? `/images/${photo.filename}`
+              : `/thumbnails/${photo.filename}`
+          }
           alt={photo.name}
           className="w-full h-full object-cover rounded-xl"
         />
