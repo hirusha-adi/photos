@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Gallery } from "./components/Gallery";
 import { NavBar } from "./components/NavBar";
-import PhotosJson from "../../assets/photos.json";
+import {PhotosJson} from "../../assets/photos.js";
 
 const All = () => {
   const [currentPhotos, setCurrentPhotos] = useState(PhotosJson.photos);

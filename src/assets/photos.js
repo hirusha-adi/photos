@@ -1,4 +1,4 @@
-{
+export const PhotosJson = {
   "sidebar_data": {
     "tags": ["Temples", "Buddhist", "Culture"],
     "locations": ["Anuradhapura", "Dhamma Gaveshi Temple"],
@@ -75,5 +75,7 @@
       "locations": ["Anuradhapura", "Dhamma Gaveshi Temple"],
       "country": "Sri Lanka"
     }
+
+    // 
   ]
 }
