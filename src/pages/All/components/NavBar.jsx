@@ -17,7 +17,7 @@ const NavBar = () => {
         </div>
         <div className="flex-none">
           <div className="hidden lg:block">
-            &copy; Hirusha Adikari, 2020-2025
+            &copy; Hirusha Adikari, 2020-{new Date().getFullYear()}
           </div>
         </div>
       </div>
