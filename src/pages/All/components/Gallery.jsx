@@ -5,7 +5,7 @@ import { ZoomableImage } from "./ZoomableImage";
 
 const Gallery = ({ currentPhotos }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const photosPerPage = 5;
+  const photosPerPage = 28;
 
   const indexOfLastPhoto = currentPage * photosPerPage;
   const indexOfFirstPhoto = indexOfLastPhoto - photosPerPage;
