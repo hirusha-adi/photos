@@ -1,7 +1,7 @@
 export const PhotosJson = {
   "sidebar_data": {
     "tags": ["Temples", "Buddhist", "Culture", "Dog", "Animals", "Monkey", "Nature", "Travel", "Horse", "Peacock", "Waterfall", "Kovil", "Flowers", "Fruits and Vegetables", "Tea"],
-    "locations": ["Anuradhapura", "Dhamma Gaveshi Temple", "Jethawanaramaya", "Isurumuniya Temple", "Ruwanwelisaya", "Nuwara Eliya", "Nawalapitiya"],
+    "locations": ["Anuradhapura", "Dhamma Gaveshi Temple", "Jethawanaramaya", "Isurumuniya Temple", "Ruwanwelisaya", "Nuwara Eliya", "Nawalapitiya", "Unknown"],
     "countries": ["Sri Lanka"]
   },
   "photos": [
@@ -946,6 +946,178 @@ export const PhotosJson = {
       "locations": ["Nawalapitiya"],
       "country": "Sri Lanka"
     },
+
+    // [Sri Lanka] Unknown
+    {
+      "name": "",
+      "filename": "97.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "98.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "99.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "101.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "102.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "119.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "120.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "121.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "122.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "123.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "124.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "125.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "126.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "127.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "128.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "129.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "130.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "131.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "132.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "133.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "134.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "135.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "136.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "254.jpg",
+      "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+
+
 
   ]
 }
