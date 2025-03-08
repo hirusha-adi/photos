@@ -1,6 +1,6 @@
 export const PhotosJson = {
   "sidebar_data": {
-    "tags": ["Temples", "Buddhist", "Culture", "Dog", "Animals", "Monkey", "Nature", "Travel", "Horse", "Peacock", "Waterfall", "Kovil", "Flowers", "Fruits and Vegetables", "Tea"],
+    "tags": ["Temples", "Buddhist", "Culture", "Dog", "Animals", "Monkey", "Nature", "Travel", "Horse", "Peacock", "Waterfall", "Kovil", "Flowers", "Fruits and Vegetables", "Tea", "Cow", "Grasshopper"],
     "locations": ["Anuradhapura", "Dhamma Gaveshi Temple", "Jethawanaramaya", "Isurumuniya Temple", "Ruwanwelisaya", "Nuwara Eliya", "Nawalapitiya", "Unknown"],
     "countries": ["Sri Lanka"]
   },
@@ -1113,6 +1113,34 @@ export const PhotosJson = {
       "name": "",
       "filename": "254.jpg",
       "tags": ["Buddhist", "Culture", "Temples"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "150.jpg",
+      "tags": ["Animals", "Cow"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "103.jpg",
+      "tags": ["Animals", "Grasshopper"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "105.jpg",
+      "tags": ["Animals", "Monkey"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "105.jpg",
+      "tags": ["Animals", "Monkey"],
       "locations": ["Unknown"],
       "country": "Sri Lanka"
     },
