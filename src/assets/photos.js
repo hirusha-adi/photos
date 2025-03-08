@@ -1,7 +1,7 @@
 export const PhotosJson = {
   "sidebar_data": {
-    "tags": ["Temples", "Buddhist", "Culture", "Dog", "Animals", "Monkey", "Nature", "Travel", "Horse", "Peacock", "Waterfall", "Kovil", "Flowers", "Fruits and Vegetables", "Tea", "Cow", "Grasshopper"],
-    "locations": ["Anuradhapura", "Dhamma Gaveshi Temple", "Jethawanaramaya", "Isurumuniya Temple", "Ruwanwelisaya", "Nuwara Eliya", "Nawalapitiya", "Unknown"],
+    "tags": ["Temples", "Buddhist", "Culture", "Dog", "Animals", "Monkey", "Butterfly", "Nature", "Travel", "Horse", "Peacock", "Waterfall", "Kovil", "Flowers", "Fruits and Vegetables", "Tea", "Cow", "Grasshopper"],
+    "locations": ["Anuradhapura", "Dhamma Gaveshi Temple", "Jethawanaramaya", "Isurumuniya Temple", "Ruwanwelisaya", "Nuwara Eliya", "Nawalapitiya", "Unknown", "Galkatiyagama Aranya Senenaya"],
     "countries": ["Sri Lanka"]
   },
   "photos": [
@@ -1261,6 +1261,29 @@ export const PhotosJson = {
       "filename": "289.jpg",
       "tags": ["Nature", "Flowers"],
       "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+
+    // [Sri Lanka] Galkatiyagama Aranya Senenaya
+    {
+      "name": "",
+      "filename": "93.jpg",
+      "tags": ["Animals", "Butterfly"],
+      "locations": ["Galkatiyagama Aranya Senenaya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "95.jpg",
+      "tags": ["Animals", "Butterfly"],
+      "locations": ["Galkatiyagama Aranya Senenaya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "96.jpg",
+      "tags": ["Animals", "Monkey"],
+      "locations": ["Galkatiyagama Aranya Senenaya"],
       "country": "Sri Lanka"
     },
 
