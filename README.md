@@ -1,29 +1,27 @@
-# React + Tailwind + Vite 
+# Photos!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This website is a collection of all my hobby photography work.
 
-Currently, two official plugins are available:
+I couldn't find a good static site generator that suited my use case, so I built my own site to showcase my photos. The advantage of this approach is that I could add proper filtering functionality for the photos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+It's nothing fancy; just a basic SPA built with ReactJS, Vite, TailwindCSS, and DaisyUI.
 
-## Project Setup
+### Commands
 
-- Project Setup Guide: [Click here](https://vite.dev/guide/#scaffolding-your-first-vite-project)
-- Tailwind Installation Guide: [Click here](https://tailwindcss.com/docs/guides/vite)
+1. **Build the image thumbnails.**
+  
+  I don't think it's really necessary for me to do this manually. I could probably run the thumbnail generation script on `prebuild` or `predev`. Alternatively, I could add the thumbnails to `.gitignore` and generate them while building the site. I'm too lazy to test this out right now, but maybe I'll improve it later.
+  
+  ```
+  npm run thumbs
+  ```
 
-## Project Structure
+2. **Run the application in development mode.**
+  
+  ```
+  npm run dev
+  ```
 
-`src/assets`
-- Static or dynamically generated images will go here.
+### Deploy
 
-`src/components`
-- Reusable (global) components will go here.
-
-`src/pages`
-- Pages/Routes will go here.
-- If the project structure is too complex, you can also have seperate directories for seperate routes, or even something like this:
-  - eg: `src/pages/admin/*`, or `src/pages/dashboard/*`
-
-`src/hooks`
-- Custom hooks will go here.
+Just push the changes. The github workflow should build the site and deploy it automatically for you.
