@@ -1139,8 +1139,127 @@ export const PhotosJson = {
     },
     {
       "name": "",
-      "filename": "105.jpg",
-      "tags": ["Animals", "Monkey"],
+      "filename": "104.jpg",
+      "tags": ["Nature"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "137.jpg",
+      "tags": ["Nature"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "138.jpg",
+      "tags": ["Nature"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "149.jpg",
+      "tags": ["Nature"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "183.jpg",
+      "tags": ["Nature"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "255.jpg",
+      "tags": ["Nature"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "256.jpg",
+      "tags": ["Nature"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "258.jpg",
+      "tags": ["Nature"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "259.jpg",
+      "tags": ["Nature"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "260.jpg",
+      "tags": ["Nature"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "261.jpg",
+      "tags": ["Nature"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "265.jpg",
+      "tags": ["Nature"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "266.jpg",
+      "tags": ["Nature"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "267.jpg",
+      "tags": ["Nature"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "268.jpg",
+      "tags": ["Nature"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "269.jpg",
+      "tags": ["Nature"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "285.jpg",
+      "tags": ["Nature"],
+      "locations": ["Unknown"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "289.jpg",
+      "tags": ["Nature", "Flowers"],
       "locations": ["Unknown"],
       "country": "Sri Lanka"
     },
