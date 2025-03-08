@@ -1,7 +1,7 @@
 export const PhotosJson = {
   "sidebar_data": {
-    "tags": ["Temples", "Buddhist", "Culture", "Dog", "Animals", "Monkey", "Nature", "Travel", "Horse", "Peacock", "Waterfall", "Kovil"],
-    "locations": ["Anuradhapura", "Dhamma Gaveshi Temple", "Jethawanaramaya", "Isurumuniya Temple", "Ruwanwelisaya", "Nuwara Eliya"],
+    "tags": ["Temples", "Buddhist", "Culture", "Dog", "Animals", "Monkey", "Nature", "Travel", "Horse", "Peacock", "Waterfall", "Kovil", "Flowers", "Fruits and Vegetables", "Tea"],
+    "locations": ["Anuradhapura", "Dhamma Gaveshi Temple", "Jethawanaramaya", "Isurumuniya Temple", "Ruwanwelisaya", "Nuwara Eliya", "Nawalapitiya"],
     "countries": ["Sri Lanka"]
   },
   "photos": [
@@ -767,6 +767,183 @@ export const PhotosJson = {
       "filename": "351.jpg",
       "tags": ["Nature", "Travel"],
       "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "353.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "354.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "355.jpg",
+      "tags": ["Nature", "Travel", "Flowers"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "356.jpg",
+      "tags": ["Nature", "Travel", "Flowers"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "362.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "363.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "364.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "365.jpg",
+      "tags": ["Nature", "Travel", "Flowers"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "366.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "367.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "368.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "369.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "370.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "371.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "372.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "373.jpg",
+      "tags": ["Nature", "Travel", "Fruits and Vegetables"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "374.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "375.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "376.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "377.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+
+    // [Sri Lanka] Nawalapitiya
+    {
+      "name": "",
+      "filename": "40.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nawalapitiya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "41.jpg",
+      "tags": ["Nature", "Travel", "Tea"],
+      "locations": ["Nawalapitiya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "42.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nawalapitiya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "60.jpg",
+      "tags": ["Nature", "Travel", "Tea"],
+      "locations": ["Nawalapitiya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "62.jpg",
+      "tags": ["Nature", "Travel", "Tea"],
+      "locations": ["Nawalapitiya"],
       "country": "Sri Lanka"
     },
 
