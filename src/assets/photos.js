@@ -1,7 +1,7 @@
 export const PhotosJson = {
   "sidebar_data": {
-    "tags": ["Temples", "Buddhist", "Culture", "Dog", "Animals", "Monkey"],
-    "locations": ["Anuradhapura", "Dhamma Gaveshi Temple", "Jethawanaramaya", "Isurumuniya Temple", "Ruwanwelisaya"],
+    "tags": ["Temples", "Buddhist", "Culture", "Dog", "Animals", "Monkey", "Nature", "Travel", "Horse", "Peacock", "Waterfall", "Kovil"],
+    "locations": ["Anuradhapura", "Dhamma Gaveshi Temple", "Jethawanaramaya", "Isurumuniya Temple", "Ruwanwelisaya", "Nuwara Eliya"],
     "countries": ["Sri Lanka"]
   },
   "photos": [
@@ -618,6 +618,155 @@ export const PhotosJson = {
       "filename": "313.jpg",
       "tags": ["Temples", "Buddhist", "Culture"],
       "locations": ["Anuradhapura", "Ruwanwelisaya"],
+      "country": "Sri Lanka"
+    },
+
+    // [Sri Lanka] Nuawara Eliya
+    {
+      "name": "",
+      "filename": "338.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "339.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "340.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "341.jpg",
+      "tags": ["Nature", "Travel", "Animals", "Peacock"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "342.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "344.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "345.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "346.jpg",
+      "tags": ["Nature", "Travel", "Waterfall"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "343.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "347.jpg",
+      "tags": ["Nature", "Travel", "Kovil"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "349.jpg",
+      "tags": ["Nature", "Travel", "Kovil"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "348.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "350.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "351.jpg",
+      "tags": ["Nature", "Animals", "Dog"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "352.jpg",
+      "tags": ["Nature", "Animals", "Horse"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "357.jpg",
+      "tags": ["Nature", "Animals", "Horse"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "358.jpg",
+      "tags": ["Nature", "Animals", "Horse"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "359.jpg",
+      "tags": ["Nature", "Animals", "Horse"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "360.jpg",
+      "tags": ["Nature", "Animals", "Horse"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "351.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
+      "country": "Sri Lanka"
+    },
+    {
+      "name": "",
+      "filename": "351.jpg",
+      "tags": ["Nature", "Travel"],
+      "locations": ["Nuwara Eliya"],
       "country": "Sri Lanka"
     },
 
